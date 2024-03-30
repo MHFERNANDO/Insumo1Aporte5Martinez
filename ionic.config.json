@@ -1,0 +1,7 @@
+{
+  "name": "RealTimeMartinez",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

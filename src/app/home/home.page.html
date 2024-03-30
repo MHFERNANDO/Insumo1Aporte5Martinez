@@ -1,20 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="fachada">
+    <br/>
+    <div class="ventanas" (click)="toggleVentana('D1')" [ngClass]="{'colorVentanaapagadaD1': !estadoD1, 'colorVentanaencendidaD1': estadoD1}">
+      <!-- Dormitorio1 -->
+      <p>Dormitorio1</p>
+    </div>
+    <div class="ventanas" (click)="toggleVentana('D2')" [ngClass]="{'colorVentanaapagadaD2': !estadoD2, 'colorVentanaencendidaD2': estadoD2}">
+      <!-- Dormitorio 2 -->
+      <p>Dormitorio 2</p>
+    </div>
+    <div class="ventanas" (click)="toggleVentana('BP')" [ngClass]="{'colorVentanaapagadaBP': !estadoBP, 'colorVentanaencendidaBP': estadoBP}">
+      <!-- Banio de Padres -->
+      <p>Banio de Padres</p>
+    </div>
+    <div class="ventanas" (click)="toggleVentana('BC')" [ngClass]="{'colorVentanaapagadaBC': !estadoBC, 'colorVentanaencendidaBC': estadoBC}">
+      <!-- Banio Comun -->
+      <p>Banio Comun</p>
+    </div>
+    <div class="ventanas" (click)="toggleVentana('S')" [ngClass]="{'colorVentanaapagadaS': !estadoS, 'colorVentanaencendidaS': estadoS}">
+      <!-- Sala -->
+      <p>Sala</p>
+    </div>
+    <div class="ventanas" (click)="toggleVentana('C')" [ngClass]="{'colorVentanaapagadaC': !estadoC, 'colorVentanaencendidaC': estadoC}">
+      <!-- Cocina -->
+      <p>Cocina</p>
+    </div>
   </div>
 </ion-content>

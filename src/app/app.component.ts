@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Database, object, ref } from '@angular/fire/database';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private database:Database) {}
 }
